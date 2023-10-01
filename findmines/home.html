@@ -18,8 +18,17 @@
         </div>
 
         <div class="messages">
-            <!--Párrafo de ejemplo-->
+            <p>Vidas: <span id="lives"></span></p>
+            <p>Tiempo⏰: <span id="time"></span></p>
+            <p>Record🏁: <span id="record">0:0</span></p>
         </div>
+
+        <div id="gameOverBanner" style="display: none;">
+            <p>Game Over</p>
+            <p>Play again in <span id="countdown">10</span> seconds</p>
+            <button id="playAgainButton" onclick="playAgain()">Play Again</button>
+          </div>
+          
     </div>
     <script src="./maps.js"></script>
     <script src="./game.js"></script>
